@@ -337,7 +337,7 @@ Topic : Forensics
 Topic : Forensics
 * Security through obscurity is the reliance in security engineering on the secrecy of the design or implementation as the main method of providing security for a system or component of a system.
 
-#### Given : [Meme image](./meme.jpg)
+#### Given : ![Meme image](./meme.jpg)
 #### Questions 
 Both answers can be found by **extract string components** from the given image file. It can be done by either CyberChef Strings operator, or open the file with text editor (eg. notepad++ or vscode), which match the given hint : __get "inside" the file -> metadata__
 
