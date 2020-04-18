@@ -5,7 +5,7 @@ A [TryHackMe room](https://tryhackme.com/room/ohsint) for beginner for [open-sou
 ## [Task 1] OhSINT 
 Given the only photo below, what information can you possible get starting with just one photo ?
 
-![Window XP default desktop wallpaper](./WindowsXP.jpg)
+![Window XP default desktop wallpaper](./src/WindowsXP.jpg)
 
 ### #1. What is this users avatar of ?
 
@@ -18,13 +18,15 @@ Given the only photo below, what information can you possible get starting with 
 * [exiftool](https://exiftool.org) is a platform-independent Perl library + a CLI application for reading, writing and editing meta information in a wide variety of file types. 
 * JFIF is one of the file types it support, which thus we are using it here to view the metadata of this image.
 * By using command **exiftool <source_name>** , the following metadata got returned :
-![Image metadata obtained in terminal](./img/WindowXP_meta.png)
+  
+  ![Image metadata obtained in terminal](./img/WindowXP_meta.png)
 
 * It is clear that the author is **OWoodflint** from above, we then search for the username on search engine (recommend __Google__ for searching)
 ![Result of googling author](./img/google_author.png)
 
-* We start digging info from the Twitter account, which look like this 
-![Author's Twitter Account](./img/twitter_author.png)
+* We start digging info from the Twitter account, which look like this :
+
+    ![Author's Twitter Account](./img/twitter_author.png)
 
 * Hence, it is clear that the user avatars on its Twitter account is a cat
 
