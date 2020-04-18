@@ -311,7 +311,7 @@ Topic : Forensics
 * When applied to an **audio signal**, spectrograms are sometimes called _sonographs, voiceprints, or voicegrams_. 
 * When the data is represented in a *3D plot* they may be called __waterfalls__.
 
-#### Given : [secretaudio.wav](/secretaudio.wav)
+#### Given : [secretaudio.wav](./secretaudio.wav)
 #### Hint : Audacity
 #### How to solve :
 * The '[Audacity](https://www.audacityteam.org)' from the given hint is actually an open source audio software, enable us to analyse an audio. However, since I dislike to download a whole software for just a question, thus I found sufficient tool online.
@@ -326,7 +326,7 @@ Topic : Forensics
 * Stegonagraphy describes the __action to conceal a message/file within an appropriate carrier__, that can be a message, image, video or an audio.
 
 #### Given :
-![A cute dinosaur is sitting on a bowl of spaghetti](/stegosteg.jpg)
+![A cute dinosaur is sitting on a bowl of spaghetti](./stegosteg.jpg)
 
 #### How to find :
 * By using this [steganographic decoder](https://futureboy.us/stegano/decinput.html), it extracts the plaintext within the given image.
@@ -337,7 +337,7 @@ Topic : Forensics
 Topic : Forensics
 * Security through obscurity is the reliance in security engineering on the secrecy of the design or implementation as the main method of providing security for a system or component of a system.
 
-#### Given : [Meme image](/meme.jpg)
+#### Given : [Meme image](./meme.jpg)
 #### Questions 
 Both answers can be found by **extract string components** from the given image file. It can be done by either CyberChef Strings operator, or open the file with text editor (eg. notepad++ or vscode), which match the given hint : __get "inside" the file -> metadata__
 
