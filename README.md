@@ -4,7 +4,8 @@
 
 It consists of tons of rooms, which are virtual classrooms dedicated to particular cybersecurity topics, with different difficulties.
 
-## Author : [Ee En Goh](https://tryhackme.com/p/vincentwu)
+## Author : 
+* [Ee En Goh](https://tryhackme.com/p/vincentwu)
 
 ## Room(s) solved :
 
