@@ -1,6 +1,9 @@
 # Crack the Hash CTF write-up
 An easy-level [TryHackMe room](https://tryhackme.com/room/crackthehash) which is focusing on **Password Cracking and Hashing Functions**
 
+## Author 
+* [Ee En Goh](https://tryhackme.com/p/vincentwu)
+
 ## [Task 1] Level 1
 
 For most the quiz in this task, they can be solved in either 

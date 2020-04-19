@@ -2,6 +2,9 @@
 
 A [TryHackMe room](https://tryhackme.com/room/ohsint) for beginner for [open-source intelligence](https://en.wikipedia.org/wiki/Open-source_intelligence), which is the collection and analysis of _information that gathered from public, or open sources_. There is one and only task that comes with a single photo, to evaluate the amount of information we can gather from it.
 
+## Author 
+* [Ee En Goh](https://tryhackme.com/p/vincentwu)
+
 ## [Task 1] OhSINT 
 Given the only photo below, what information can you possible get starting with just one photo ?
 

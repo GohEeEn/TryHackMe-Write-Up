@@ -1,6 +1,8 @@
 # c4ptur3-th3-fl4g write-up
 A beginner-level CTF challenge as one of the [TryHackMe room](https://tryhackme.com/room/c4ptur3th3fl4g), which focus in [Cryptography](https://ctf101.org/cryptography/overview/) and [Forensics](https://ctf101.org/forensics/overview/) that divided into 5 different tasks. 
 
+## Author 
+* [Ee En Goh](https://tryhackme.com/p/vincentwu)
 
 ## [Task 1] Translation & Shifting
 Topic : Cryptography
