@@ -207,10 +207,14 @@ Each task resource is given on the deployed site, and a form to fill in the key,
 
 #### How to find :
 1. Given a WAV format audio file, clearly we will think about the spectrogram of it. (Note the spectrogram isn't clear enough by default, enlargement is required)
+   
    ![A URL embedded within the spectrogram of the audio file given](./img/q7_t2a.png)
 2. An image is found from the given URL, which is a standing red colour pencil.
+   
    ![The image found on the hidden URL](./src/exam2.png)
+
 3. Since the image is in PNG format, the first tool in mind will be zsteg, and extract all string with option __-s all__
+   
    ![All strings extracted from the image found](./img/q7_t2b.png)
    
 #### Solution : fatality
