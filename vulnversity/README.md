@@ -110,7 +110,45 @@ All 5 extensions given in phpext.txt are recognized as different PHP file format
 
 #### Result : _.phtml_
 
+### #4. Reverse shell 
+
+1. We use a PHP script to achieve the goal, which can found on Kali (install by default), or link [here](http://pentestmonkey.net/tools/php-reverse-shell)
+
+2. The exploit above accepts .phtml format of PHP file only, so we need to rename it and modify the code to an IP of your choice (for establishing connection to the file on host server).
+
+    ![Rename PHP script and its format](./img/rename-php-extension-phtml.png)
+    ![Modify the script to IP address of your choice](./img/phtml-script-target-ip-port.png)
+
+3. Upload the .phtml file to the upload form, which you can find it at relative URL ___/internal/uploads/___
+
+    ![Where uploaded .phtml file can be found](./img/remote-uploads-directory.png)
+
+4. The script file uploaded open an outbound TCP connection from the webserver to a host and port of your choice. It will be activated by clicking the script file, ie. executed.
+5. Before that, we need something to do the reading and writing to the network connection established from the script. Here, we are using [netcat](https://en.wikipedia.org/wiki/Netcat) for this purpose. 
+
+6. It can be done with the following command, as it is installed by default on Kali.
+
+    ```Bash
+    nc -vnl -p <port_specified_in_script>
+    ```
+    Before the script launched on the host server :
+    ![Listening to the IP address before the script launched on the host server](./img/nc-command-listen.png)
+
+    After clicking on the script on host (executed) :
+    ![The sample output when the connection is established successfuly](./img/phtml-script-launch-success.png)
+
+### #5. What user was running the web server ?
+
+It can be achieved by traverse to the /home directory and list all directory available.
+
+![User found on host server](./img/find-username.png)
+
+#### Result : bill
+
+
 ## [Task 5] Privilege Escalation
+
+[Privilege Escalation](https://en.wikipedia.org/wiki/Privilege_escalation) means the act of _exploiting a bug, design flaw or configuration oversight in an operating system or application to gain elevated access to resources that are normally protected from an application or user_. It results in more privileges than intended are obtained, and possible to perform unauthorized action. We will use the exploitation found above to get access to the host. 
 
 After compromised this machine, becoming the superuser of this ubuntu web server allows us to have more power to control it
 
@@ -126,4 +164,34 @@ To know more about SUID, click [here](https://www.linuxnix.com/suid-set-suid-lin
 * 4000 is a mode convention integer for constant S_ISUID, associated with _"setuid"_
 * Reference : https://unix.stackexchange.com/questions/145114/file-permission-with-setuid-and-octal-4000 
 
+It allows us to find out the way to be superuser on the host server
+
 #### Result : /bin/systemctl
+
+### #2. Become root and get the last flag (/root/root.txt)
+
+What is [/bin/systemctl](https://www.linode.com/docs/quick-answers/linux-essentials/introduction-to-systemctl/) ?
+* It is a binary that controls interfaces for init systems (systemd) and service managers
+* It launches all those services that happen during the boot time, by searching those task files in **/etc/system/systemd**
+
+### How to : ([Reference](https://gtfobins.github.io/gtfobins/systemctl))
+1. Although we can't access to /root and thus we can't make the unit file, we still can create environment variable
+
+    ![Create an environment variable](./img/create-env-var.png)
+
+2. We create a unit file and assign this to the environment variable.
+
+    ![Create a unit file and assign it to the environment variable](./img/create-unit-file-assign-env.png)
+
+3. It creates a service which will be executed with Bash shell (/bin/bash) :
+   * Flag **-c** for bash enables the command read from the first non-option argument command string
+   * The service is actually consist a line of command **cat ...**
+
+4. Execute that unit file by using **systemctl** binary
+
+    ![Commands to execute the unit file](./img/execute-unit-file.png)
+    * Option **link** _links the unit file into the search path_ when executing any command
+    * Option  **enable** _enables _ the specified unit file to be executed
+    * Flag **--now** _starts the unit file after enabling it_
+
+5. Now the target file can be found in the _/opt/flag_ directory
