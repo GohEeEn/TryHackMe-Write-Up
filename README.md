@@ -16,4 +16,5 @@ Room Name   | Topics    | Difficulty    | Description
 [Crack the hash](https://github.com/GohEeEn/TryHackMe-Write-Up/tree/master/Crack%20the%20Hash) | hash, hashcat, cracking | Easy | Cracking hashes challenges
 [Simple CTF](https://github.com/GohEeEn/TryHackMe-Write-Up/tree/master/Simple%20CTF) | security, enumeration, privesc | Easy | Beginner level ctf
 [CC: Steganography](https://github.com/GohEeEn/TryHackMe-Write-Up/tree/master/ccstego) | security, steg, secret | Easy | A crash course on the topic of steganography 
-[vulnversity](https://tryhackme.com/room/vulnversity) | recon, privesc, webappsec | Easy | Learn about active recon, webapp attacks and privilege escalation
+[vulnversity](https://github.com/GohEeEn/TryHackMe-Write-Up/tree/master/vulnversity) | recon, privesc, webappsec | Easy | Learn about active recon, webapp attacks and privilege escalation
+[Musical Stegonography](https://github.com/GohEeEn/TryHackMe-Write-Up/tree/master/musicalstego) | steganography, audio, qr, morse | Intermediate | This audio file is hiding something. Are you able to extract enough data to reveal the flag ?
