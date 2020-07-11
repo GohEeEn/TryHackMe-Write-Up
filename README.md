@@ -4,10 +4,11 @@
 
 It consists of tons of rooms, which are virtual classrooms dedicated to particular cybersecurity topics, with different difficulties.
 
-## Author : 
+## Author
+
 * [Ee En Goh](https://tryhackme.com/p/vincentwu)
 
-## Room(s) solved :
+## TryHackMe Room(s) solved
 
 Room Name   | Topics    | Difficulty    | Description
 ----        | ----      | ----          | ----
@@ -19,3 +20,4 @@ Room Name   | Topics    | Difficulty    | Description
 [vulnversity](https://github.com/GohEeEn/TryHackMe-Write-Up/tree/master/vulnversity) | recon, privesc, webappsec | Easy | Learn about active recon, webapp attacks and privilege escalation
 [Musical Stegonography](https://github.com/GohEeEn/TryHackMe-Write-Up/tree/master/musicalstego) | steganography, audio, qr, morse | Intermediate | This audio file is hiding something. Are you able to extract enough data to reveal the flag ?
 [Injection](https://github.com/GohEeEn/TryHackMe-Write-Up/tree/master/Injection) | security, linux, web, os command injection | Intermediate | Walkthrough of OS Command Injection. Demonstrate OS Command Injection and explain how to prevent it on your servers
+[Mr Robot CTF](https://github.com/GohEeEn/TryHackMe-Write-Up/tree/master/Mr.RobotCTF) | mr robot, root, beginner| Intermediate | Based on the Mr. Robot show, can you root this box?
