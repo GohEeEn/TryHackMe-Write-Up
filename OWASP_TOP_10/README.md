@@ -1,4 +1,4 @@
-# OWASP Top 10
+# [OWASP Top 10](https://tryhackme.com/room/owasptop10)
 
 A TryHackMe walkthrough room to allow users to learn one of the OWASP vulnerabilities every day for 10 days in a row.
 
