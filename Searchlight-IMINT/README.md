@@ -26,7 +26,7 @@ For this challenge, I got 2 different way to solve it :
 
 1. Finding information from the image :
 
-    ![The image from the given task with key information highlighted](./img/task3-image-analysis.png)
+    ![The image from the given task with key information highlighted](./img/task3-image-analysis.PNG)
 
 - The signboard/trademark on the picture '_UNDERGROUND_' should be obvious that it is a __London Underground__
 - You can find the metro sign from this [list](https://en.wikipedia.org/wiki/List_of_metro_systems) of metro systems
@@ -39,13 +39,13 @@ For this challenge, I got 2 different way to solve it :
 - [Yandex](https://yandex.com) is Russian-based search image, and the advantage is that its image search is based on Machine Learning, instead of originality-search like Google Search.
 - It returns a list of information from the image analysis, such as 'Text in image', 'Similar Images' and 'Sites where the image occurs'
 - The analysis result looks like this :
-  ![Analysis result of the image on Yandex](./img/task3-yandex-search.png)
+  ![Analysis result of the image on Yandex](./img/task3-yandex-search.PNG)
 - The analysis result on Yandex should have give you sufficient information to solve this challenge
 - More information about Yandex can be found on another THM room [Geolocating Image](https://tryhackme.com/room/geolocatingimages)
 
 ## [Task 4] Keep at it
 
-![Image given for task 4 with key thing hightlighted to look after](./img/task4-image-analysis.png)
+![Image given for task 4 with key thing hightlighted to look after](./img/task4-image-analysis.PNG)
 
 - Just pay attention to the hightlighted part and search about related terms, then you may get the results
 - __Hint__ : The URL link on the signboard ended with __.CA__, which means it is a website with domain in _Canada_
