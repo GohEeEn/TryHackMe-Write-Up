@@ -1,0 +1,45 @@
+cmd : nmap -A -T3 -p-15000 10.200.56.200
+
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-06-13 09:07 EDT
+
+Nmap scan report for 10.200.56.200
+Host is up (0.54s latency).
+Not shown: 14995 filtered ports
+PORT      STATE  SERVICE    VERSION
+22/tcp    open   ssh        OpenSSH 8.0 (protocol 2.0)
+| ssh-hostkey: 
+|   3072 9c:1b:d4:b4:05:4d:88:99:ce:09:1f:c1:15:6a:d4:7e (RSA)
+|   256 93:55:b4:d9:8b:70:ae:8e:95:0d:c2:b6:d2:03:89:a4 (ECDSA)
+|_  256 f0:61:5a:55:34:9b:b7:b8:3a:46:ca:7d:9f:dc:fa:12 (ED25519)
+80/tcp    open   http       Apache httpd 2.4.37 ((centos) OpenSSL/1.1.1c)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.37 (centos) OpenSSL/1.1.1c
+|_http-title: Did not follow redirect to https://thomaswreath.thm
+443/tcp   open   ssl/http   Apache httpd 2.4.37 ((centos) OpenSSL/1.1.1c)
+| http-methods: 
+|   Supported Methods: HEAD GET POST OPTIONS TRACE
+|_  Potentially risky methods: TRACE
+|_http-server-header: Apache/2.4.37 (centos) OpenSSL/1.1.1c
+|_http-title: Thomas Wreath | Developer
+| ssl-cert: Subject: commonName=thomaswreath.thm/organizationName=Thomas Wreath Development/stateOrProvinceName=East Riding Yorkshire/countryName=GB
+| Issuer: commonName=thomaswreath.thm/organizationName=Thomas Wreath Development/stateOrProvinceName=East Riding Yorkshire/countryName=GB
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2021-06-13T12:55:13
+| Not valid after:  2022-06-13T12:55:13
+| MD5:   c324 2ccb 6a1d e42d ad3b 6588 ba48 b2fb
+|_SHA-1: 4860 d016 f007 955d 9a84 abec 49cb 95bb 1c0d 398d
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|_  http/1.1
+9090/tcp  closed zeus-admin
+10000/tcp open   http       MiniServ 1.890 (Webmin httpd)
+|_http-favicon: Unknown favicon MD5: 55935456054CC39EA521E386491212D7
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Site doesn't have a title (text/html; Charset=iso-8859-1).
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 581.39 seconds
