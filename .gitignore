@@ -2,3 +2,5 @@
 *.ppt
 *.pdf
 */new
+*.pem
+Wreath/tools/*
