@@ -1,6 +1,11 @@
+# TryHackMe-related
 *.ovpn
+*.pem
+
+# Network-related
+Wreath/tools/*
+
+# General Files
 *.ppt
 *.pdf
 */new
-*.pem
-Wreath/tools/*
